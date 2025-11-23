@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+.font-noto {
+    font-family: "Noto Serif", serif;
+}
+
+.font-inter {
+      font-family: "Inter", sans-serif;
+}
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 0;
+}
+
+.logo img {
+    height: 55px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 32px;
+    list-style: none;
+    padding: 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #252432;
+    font-size: 16px;
+}
+
+.cart {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 16px;
+}
+
+.cart img {
+    height: 24px;
+}
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
