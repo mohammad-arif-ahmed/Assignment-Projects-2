@@ -29,6 +29,7 @@
     gap: 32px;
     list-style: none;
     padding: 0;
+    margin-left: auto;
 }
 
 .nav-links a {
@@ -42,6 +43,7 @@
     align-items: center;
     gap: 6px;
     font-size: 16px;
+    margin-left: 32px;
 }
 
 .cart img {
