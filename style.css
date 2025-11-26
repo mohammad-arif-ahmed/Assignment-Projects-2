@@ -367,6 +367,78 @@
     color: #000000;
     opacity: 0.5;
 }
+.footer {
+    padding: 80px 0;
+    background: #ffffff;
+    font-family: 'Inter', sans-serif;
+}
+
+.footer-wrapper {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+/* LEFT */
+.footer-left {
+    max-width: 320px;
+}
+
+.footer-logo {
+    width: 160px;
+    margin-bottom: 20px;
+}
+
+.footer-desc {
+    font-size: 22px;
+    color: rgba(0,0,0,0.5);
+    line-height: 1.5;
+}
+
+/* MIDDLE LINKS */
+.footer-links {
+    display: grid;
+    grid-template-columns: repeat(2, 160px);
+    column-gap: 70px;
+    row-gap: 16px;
+}
+
+.footer-links .col {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.footer-links a {
+    font-size: 22px;
+    color: rgba(0,0,0,0.5);
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.footer-links a:hover {
+    opacity: 1;
+}
+
+/* RIGHT SOCIAL */
+.footer-social {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.footer-social img {
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.footer-social img:hover {
+    opacity: 0.7;
+}
 
 @media screen and (max-width: 576px) {
     .flower-container {
@@ -409,4 +481,52 @@
     .newsletter-section h2 {
         font-size: 20px;
     }
+    .flower-container {
+        flex-direction: column;
+        gap: 18px;
+        padding-left: 20px; 
+    }
+    .footer-wrapper {
+        flex-direction: column; 
+        gap: 30px; 
+        align-items: flex-start; 
+        text-align: left; 
+    }
+
+    .footer-left {
+        max-width: 100%;
+    }
+    
+    .footer-logo {
+        margin: 0; 
+    }
+
+    .footer-desc {
+        font-size: 16px;
+        max-width: 100%;
+        margin: 15px 0 0 0; 
+    }
+    .footer-links {
+        display: flex;
+        flex-direction: column; 
+        gap: 30px; 
+        width: 100%;
+    }
+
+    .footer-links .col {
+        display: flex;
+        flex-direction: column; 
+        gap: 12px;
+        width: auto; 
+    }
+
+    .footer-links a {
+        font-size: 16px; 
+    }
+    .footer-social {
+        justify-content: flex-start; 
+        width: 100%;
+    }
 }
+
+
