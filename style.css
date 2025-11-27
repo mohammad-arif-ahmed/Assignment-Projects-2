@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -11,8 +12,9 @@
 }
 
 .font-inter {
-      font-family: "Inter", sans-serif;
+    font-family: "Inter", sans-serif;
 }
+
 .nav {
     display: flex;
     align-items: center;
@@ -49,6 +51,7 @@
 .cart img {
     height: 24px;
 }
+
 @media (max-width: 768px) {
     .nav-links {
         display: none;
@@ -58,27 +61,29 @@
 .container {
     max-width: 1140px;
     margin: 0 auto;
+    width: 100%;
+    padding: 0 15px;
 }
 
 .text-dark {
-    color: #000000; 
+    color: #000000;
 }
 
 .text-primary {
-    color: #E95A08; 
+    color: #E95A08;
 }
 
 .hero-section {
     display: flex;
-    align-items: center; 
+    align-items: center;
     justify-content: space-between;
-    padding-top: 50px; 
-    min-height: 70vh; 
+    padding-top: 50px;
+    min-height: 70vh;
     gap: 40px;
 }
 
 .hero-content {
-    flex: 1; 
+    flex: 1;
     max-width: 50%;
 }
 
@@ -92,16 +97,16 @@
 .hero-subtitle {
     font-size: 18px;
     line-height: 1.6;
-    color: #000000; 
+    color: #000000;
     opacity: 0.5;
     max-width: 480px;
 }
 
 .hero-image {
-    flex: 1; 
+    flex: 1;
     display: flex;
-    justify-content: flex-end; 
-   
+    justify-content: flex-end;
+
     top: 50px;
 }
 
@@ -110,30 +115,35 @@
     height: 355px;
     display: block;
 }
+
 @media (max-width: 768px) {
     .hero-section {
         flex-direction: column;
-        align-items: flex-start;  
+        align-items: flex-start;
         text-align: left;
         padding-top: 20px;
     }
+
     .hero-image {
         order: -1;
         width: 100%;
         justify-content: center;
         margin-bottom: 20px;
     }
+
     .hero-image img {
         width: 100%;
         max-width: 400px;
         height: auto;
         object-fit: contain;
     }
+
     .hero-title {
         font-size: 24px;
         line-height: 1.2;
         margin-bottom: 10px;
     }
+
     .hero-subtitle {
         font-size: 14px;
         line-height: 1.5;
@@ -146,6 +156,7 @@
         padding-right: 10px;
     }
 }
+
 .plants-section {
     padding: 60px 0 80px;
     text-align: center;
@@ -164,20 +175,26 @@
     margin: 0 auto 50px;
     line-height: 1.5;
 }
+
 .plants-grid {
     display: grid;
-    grid-template-columns: repeat(4, 270px); 
+    grid-template-columns: repeat(4, 1fr);
     gap: 20px;
-    justify-content: start; 
+    justify-content: center;
+    width: 100%;
+    max-width: 100%;
 }
+
 .plant-card {
-    width: 270px;
-    height: 484.94px;
+    width: 100%;
+    max-width: 270px;
+    height: auto;
     background: #ffffff;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-bottom: 20px;
+    margin: 0 auto;
 }
 
 .plant-card img {
@@ -212,67 +229,86 @@
     font-weight: 600;
     cursor: pointer;
 }
+
 @media (max-width: 768px) {
     .plants-title {
         font-size: 24px;
         font-weight: bold;
     }
+
     .plants-subtitle {
         font-size: 14px;
         color: #000000;
         opacity: 0.5;
-        
+
     }
+
     .plants-grid {
         grid-template-columns: repeat(2, 1fr);
-        gap: 5px;
-        padding: 0 10px; 
-    }
-    .plant-card {
+        gap: 10px;
+        padding: 0 15px;
         width: 100%;
-        height: auto;
-        padding: 10px;
     }
+
+    .plant-card {
+        max-width: none;
+        height: auto;
+    }
+
     .plant-card img {
         width: 100%;
         height: 200px;
         object-fit: cover;
     }
+
     .plant-name {
         font-size: 14px;
         margin-top: 10px;
     }
+
     .plant-price {
         font-size: 14px;
         margin-top: 4px;
     }
+
     .add-cart-btn {
         height: 36px;
         font-size: 12px;
         margin-top: 10px;
     }
 }
+
 .section-gap {
     margin-top: 60px;
 }
+
 .display-flex {
     display: flex;
 }
+
 .heading {
     font-size: 50px;
     font-weight: 700;
 }
+
 .paragraph {
     font-size: 22px;
     color: #000000;
     opacity: 0.5;
 }
+
 .list-item {
     margin-top: 22px;
 }
+
 .flower-container {
     gap: 65px;
 }
+
+.store {
+    width: 450px;
+}
+
 .badge {
     width: 286px;
     height: 286px;
@@ -281,17 +317,21 @@
     right: -90px;
     filter: drop-shadow(-4px 10px 4px rgba(0, 0, 0, 0.25));
 }
+
 .image-container {
     position: relative;
 }
+
 .deals-heading {
     flex-direction: column;
     align-items: center;
     gap: 16px;
 }
-.deals-heading p{
+
+.deals-heading p {
     text-align: center;
 }
+
 .card-container {
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -299,6 +339,7 @@
     margin-top: 120px;
     gap: 28px;
 }
+
 .card {
     height: 200px;
     display: flex;
@@ -309,18 +350,21 @@
     gap: 15px;
     border-radius: 15px;
 }
+
 .bloom {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(assets/deal-bloom.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
+
 .ana {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(assets/deal-ana.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
+
 .zabo {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(assets/deal-zabo.png);
     background-size: cover;
@@ -330,11 +374,13 @@
     grid-row: 1/3;
     height: 100%;
 }
+
 .card span {
     text-decoration: underline;
 }
+
 .newsletter-section {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),url(assets/news-letter-bg.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(assets/news-letter-bg.png);
     height: 533px;
     background-repeat: no-repeat;
     background-position: center;
@@ -345,13 +391,16 @@
     align-items: center;
     gap: 23px;
 }
+
 .newsletter-section h2 {
     color: white;
 }
+
 .submission-box {
     display: flex;
     width: 70%;
 }
+
 .submission-box button {
     background-color: #E95A08;
     padding: 20px 50px;
@@ -359,16 +408,19 @@
     font-size: 16px;
     border: none;
 }
+
 .submission-box input[type="email"] {
     width: 100%;
     padding: 8px 20px;
     outline: none;
 }
+
 .submission-box input[type="email"] ::placeholder {
     font-size: 16px;
     color: #000000;
     opacity: 0.5;
 }
+
 .footer {
     padding: 80px 0;
     background: #ffffff;
@@ -395,7 +447,7 @@
 
 .footer-desc {
     font-size: 22px;
-    color: rgba(0,0,0,0.5);
+    color: rgba(0, 0, 0, 0.5);
     line-height: 1.5;
 }
 
@@ -415,7 +467,7 @@
 
 .footer-links a {
     font-size: 22px;
-    color: rgba(0,0,0,0.5);
+    color: rgba(0, 0, 0, 0.5);
     text-decoration: none;
     transition: 0.2s;
 }
@@ -447,88 +499,107 @@
         flex-direction: column;
         gap: 18px;
     }
+
     .store {
         width: 100%;
     }
+
     .badge {
         display: none;
     }
+
     .heading {
         font-size: 24px;
         margin: 0;
     }
+
     br {
         display: none;
     }
+
     .paragraph {
         font-size: 14px;
     }
+
     .list-item {
         margin-top: 16px;
     }
+
     .card-container {
         grid-template-columns: repeat(1, 1fr);
         margin-top: 46px;
     }
+
     .card {
         height: 206px;
     }
+
     .zabo {
         grid-column: auto;
         grid-row: auto;
     }
+
     .submission-box button {
         padding: 8px 20px;
     }
+
     .newsletter-section h2 {
         font-size: 20px;
     }
+
     .flower-container {
         flex-direction: column;
         gap: 18px;
-        padding-left: 20px; 
+        padding-left: 20px;
     }
+
     .footer-wrapper {
-        flex-direction: column; 
-        gap: 30px; 
-        align-items: flex-start; 
-        text-align: left; 
+        flex-direction: column;
+        gap: 30px;
+        align-items: flex-start;
+        text-align: left;
     }
 
     .footer-left {
         max-width: 100%;
     }
-    
+
     .footer-logo {
-        margin: 0; 
+        margin: 0;
     }
 
     .footer-desc {
         font-size: 16px;
         max-width: 100%;
-        margin: 15px 0 0 0; 
+        margin: 15px 0 0 0;
     }
+
     .footer-links {
         display: flex;
-        flex-direction: column; 
-        gap: 30px; 
+        flex-direction: column;
+        gap: 30px;
         width: 100%;
     }
 
     .footer-links .col {
         display: flex;
-        flex-direction: column; 
+        flex-direction: column;
         gap: 12px;
-        width: auto; 
+        width: auto;
     }
 
     .footer-links a {
-        font-size: 16px; 
+        font-size: 16px;
     }
+
     .footer-social {
-        justify-content: flex-start; 
+        justify-content: flex-start;
         width: 100%;
     }
 }
+.plants-section { overflow-x: hidden; }
 
-
+html,
+body {
+    overflow-x: hidden;
+}
